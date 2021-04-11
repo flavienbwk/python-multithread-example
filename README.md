@@ -22,6 +22,6 @@ user_id,file_url
 2,https://i.imgur.com/ddOusrC.jpg
 ```
 
-Then, use the `multithread_sqlite.py` example !
+Then, use the [`multithread_sqlite.py`](./multithread_sqlite.py) example !
 
 You can adjust the number of workers [at line 34 `concurrent.futures.ProcessPoolExecutor(max_workers=4)`](./multithread_sqlite.py#L34)
