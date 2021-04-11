@@ -10,6 +10,8 @@ The first example provided to you is a simple script printing the square of a li
 
 See [`multithread.py`](./multithread.py)
 
+You can adjust the number of workers [at line 13 `concurrent.futures.ProcessPoolExecutor(max_workers=4)`](./multithread.py#L13)
+
 ## Multithread download (SQLite example)
 
 Let's say you want to download files associated to each user listed in your SQLite database with that format :
