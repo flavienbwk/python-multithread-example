@@ -31,7 +31,7 @@ def download_file(file_url, dst_file):
 def main():
     connection = sqlite3.connect("my_sqlite.db")
     cursor = connection.cursor()
-    with concurrent.futures.ProcessPoolExecutor(max_workers=4) as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
         for row in cursor.execute('SELECT * FROM users;'):
             user_id = row[0]
             file_url = row[1]
