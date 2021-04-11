@@ -10,12 +10,12 @@ The first example provided to you is a simple script prints the given figure and
 
 See [`multithread.py`](./multithread.py)
 
-You can adjust the number of workers [at line 15 `concurrent.futures.ThreadPoolExecutor(max_workers=4)`](./multithread.py#L15)
-
 ### Benchmark
 
 - `multithread_benchmark.py`, 20 workers : `5.01298189163208 seconds`
 - `no_multithread_benchmark.py` : `100.09807777404785 seconds`
+
+> You can adjust the number of workers [at line 15 `concurrent.futures.ThreadPoolExecutor(max_workers=4)`](./multithread.py#L15)
 
 ## Multi-thread download (SQLite example)
 
@@ -29,7 +29,7 @@ user_id,file_url
 
 Then, use the [`multithread_sqlite.py`](./multithread_sqlite.py) example !
 
-You can adjust the number of workers [at line 34 `concurrent.futures.ThreadPoolExecutor(max_workers=4)`](./multithread_sqlite.py#L34)
+> You can adjust the number of workers [at line 34 `concurrent.futures.ThreadPoolExecutor(max_workers=4)`](./multithread_sqlite.py#L34)
 
 ## Multi-threaded asyncio subprocesses
 
